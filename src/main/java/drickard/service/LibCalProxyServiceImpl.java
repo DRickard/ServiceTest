@@ -1,4 +1,4 @@
-package drickrd.service;
+package drickrad.service;
 
 import io.vertx.core.Future;
 import io.vertx.core.Vertx;

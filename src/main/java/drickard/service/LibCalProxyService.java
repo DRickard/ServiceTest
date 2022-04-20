@@ -1,4 +1,4 @@
-package drickard.service;
+package drickrad.service;
 
 import io.vertx.codegen.annotations.ProxyClose;
 import io.vertx.codegen.annotations.ProxyGen;
@@ -13,7 +13,7 @@ import io.vertx.serviceproxy.ServiceProxyBuilder;
 public interface LibCalProxyService {
 
     String ADDRESS = LibCalProxyService.class.getName();
-	
+
     static LibCalProxyService create(Vertx aVertx) {
         return new LibCalProxyServiceImpl(aVertx);
     }
@@ -23,9 +23,9 @@ public interface LibCalProxyService {
     }
 
     Future<JsonObject> getClientCredentials(final String aAppName);
- 
+
     Future<JsonObject> getAccessToken(final String aClientID, final String aClientSecret);
- 
+
     Future<JsonObject> getLibCalOutput(final String aOUathToken, final String aLibCalQuery);
- 
+
 }
