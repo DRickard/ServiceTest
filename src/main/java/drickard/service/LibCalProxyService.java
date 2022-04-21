@@ -1,4 +1,4 @@
-package drickrad.service;
+package drickard.service;
 
 import io.vertx.codegen.annotations.ProxyClose;
 import io.vertx.codegen.annotations.ProxyGen;
